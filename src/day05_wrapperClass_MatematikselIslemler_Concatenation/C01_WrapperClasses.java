@@ -33,9 +33,13 @@ public class C01_WrapperClasses {
 
         System.out.println( fiyat1 + fiyat2 + fiyat3   ); // 9.9421.7414.86
 
+        //double fyt = Double.parseDouble(fiyat1) + Double.parseDouble(fiyat2) + Double.parseDouble(fiyat3);
+//
         double fyt1Dob = Double.parseDouble(fiyat1) ;
         double fyt2Dob = Double.parseDouble(fiyat2) ;
         double fyt3Dob = Double.parseDouble(fiyat3) ;
+
+        //System.out.println(fyt/3);
 
         System.out.println(  "Ortalama fiyat : " +   ( fyt1Dob +fyt2Dob +fyt3Dob)/3   );
 

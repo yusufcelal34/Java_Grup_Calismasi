@@ -9,7 +9,7 @@ public class C02_ExplicitNarrowing {
         int b  = 4567;
 
 
-//        byte c = a ;
+//        byte c = a ; // NOt: buradaki işlem CTE vermesi data ya değil data türüne bakar yani int byte a atanmaz.
 //        byte d = b ;
 
 
@@ -33,15 +33,17 @@ public class C02_ExplicitNarrowing {
         byte d = (byte)b ;
 
         System.out.println("13'un byte variable'a atanmis hali : " + c); // 13
-        System.out.println("4567'un byte variable'a atanmis hali : " + d); // -41
+        System.out.println("4567'un byte variable'a atanmis hali : " + d); // -41 Not: Doldur boşalt yaptıktan sonra kalan sayı
 
 
         double dbl1 = 74.3;
         float fl1 = 57.98F;
 
-        int sayi1 = (int)dbl1;
+        // int sayi1 = dbl1;
+        int sayi1 = (int)dbl1;  // Ondalıklı kısmını direk kesip çöpe atıyor.
 
-        int sayi2 = (int)fl1;
+        // int sayi2 = fl1;
+        int sayi2 = (int)fl1;  //
 
 
         System.out.println("74.3'un int variable'a atanmis hali : " + sayi1); // 74
