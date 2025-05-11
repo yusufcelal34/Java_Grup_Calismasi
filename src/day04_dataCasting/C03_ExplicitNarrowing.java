@@ -1,8 +1,18 @@
 package day04_dataCasting;
 
-public class C03_ExplicitNarrowing
-{
+public class C03_ExplicitNarrowing {
+
     public static void main(String[] args) {
+
+        /*
+            Biz java'ya explicit (zorlayarak) casting yapmasini soylersek
+            Java degeri, variable'in data turune uygun hale getirmek icin
+            degerini degistirebilir
+            ve data kaiplari olabilir
+            dbl1 = 74.3;  ==> int'a cast edilirse 74  olur ve data kaybi olur
+            int 260 ==> byte'a cast edilirse 4 olur data baskalasmis olur
+         */
+
 
         int sayi1 = 17;
         int sayi2 = 125;
@@ -12,26 +22,36 @@ public class C03_ExplicitNarrowing
         int sayi6 = 520;
         int sayi7 = 1245621;
 
-        byte byt = (byte) sayi1;
-        System.out.println(sayi1 + "'nin byte'a cast edilmiş hali : " + byt);
+        byte byt = (byte)sayi1;
+        System.out.println("17'nin byte'a cast edilmis hali : " + byt); // 17
 
-        byte byt2 = (byte) sayi2;
-        System.out.println(sayi2 + "'in byte'a cast edilmiş hali : " + byt2);
+        byt = (byte)sayi2;
+        System.out.println("125'in byte'a cast edilmis hali : " + byt); // 125
 
-        byte byt3 = (byte) sayi3;
-        System.out.println(sayi3 + "'in byte'a cast edilmiş hali : " + byt3);
+        byt = (byte)sayi3;
+        System.out.println("134'un byte'a cast edilmis hali : " + byt); // -122
 
-        byte byt4 = (byte) sayi4;
-        System.out.println(sayi4 + "'in byte'a cast edilmiş hali : " + byt4);
+        byt = (byte)sayi4;
+        System.out.println("145'in byte'a cast edilmis hali : " + byt); // -111
 
-        byte byt5 = (byte) sayi5;
-        System.out.println(sayi5 + "'in byte'a cast edilmiş hali : " + byt5);
+        byt = (byte)sayi5;
+        System.out.println("260'in byte'a cast edilmis hali : " + byt); // 4
+        // 256  ve katlari 0'a donmus olur,  buna gore kontrol edebiliriz
 
-        byte byt6 = (byte) sayi6;
-        System.out.println(sayi6 + "'in byte'a cast edilmiş hali : " + byt6);
+        byt = (byte)sayi6;
+        System.out.println("520'nin byte'a cast edilmis hali : " + byt); // 8
 
-        byte byt7 = (byte) sayi7;
-        System.out.println(sayi7 + "'in byte'a cast edilmiş hali : " + byt7);
+        byt = (byte)sayi7;
+        System.out.println("1245621'in byte'a cast edilmis hali : " + byt); // -75
+
+
+
+
+
+
+
+
+
 
     }
 }

@@ -4,11 +4,12 @@ public class C02_WrapperClassDikkatEdilecekKonu {
 
     public static void main(String[] args) {
 
+
         int sayiInt = 23;
         double sayiDouble = 45.3;
 
 
-       double a = sayiInt;
+        double a = sayiInt;
         int b = (int)sayiDouble;
 
 
@@ -42,6 +43,7 @@ public class C02_WrapperClassDikkatEdilecekKonu {
         Double wrapDouble = geciciDouble;
 
         System.out.println("Double'a cast edilen sayi : " + wrapDouble); // 34.0
+
 
 
 

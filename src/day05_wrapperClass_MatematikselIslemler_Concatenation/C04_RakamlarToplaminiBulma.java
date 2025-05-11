@@ -2,29 +2,42 @@ package day05_wrapperClass_MatematikselIslemler_Concatenation;
 
 import java.util.Scanner;
 
-public class C04_RakamlarToplaminiBulma
-{
+public class C04_RakamlarToplaminiBulma {
+
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Lutfen 3 basamakli pozitif bir tam sayi giriniz");
+        // Kullanicidan 3 basamakli pozitif bir tamsayi alip
+        // girilen sayinin rakamlar toplamini yazdirin
 
-        int sayi = scanner.nextInt();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Lutfen 3 basamakli pozitif bir tamsayi giriniz...");
+        int sayi = scanner.nextInt();  // 234
 
         int rakam = 0;
         int rakamlarToplami = 0;
 
-        rakam = sayi % 10;
-        rakamlarToplami = rakamlarToplami + rakam;
 
-        sayi = sayi / 10;
 
         rakam = sayi % 10;
+        rakamlarToplami = rakamlarToplami + rakam ;
+
+        sayi = sayi / 10;  // sayi artik 2 basamakli oldu
+
+
+
+        rakam = sayi % 10;
+
         rakamlarToplami = rakamlarToplami + rakam;
 
-        sayi = sayi / 10;
-        rakamlarToplami = rakamlarToplami + sayi;
+        sayi = sayi / 10;  // artik sayi tek basamakli
 
-        System.out.println(rakamlarToplami);
+
+        rakamlarToplami = rakamlarToplami + sayi ;
+
+        System.out.println("girilen sayinin rakamlar toplami : " + rakamlarToplami);
+
+
+
     }
 }
