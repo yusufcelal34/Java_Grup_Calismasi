@@ -61,7 +61,7 @@ public class C01_AutoWidening {
         lng = byt;
         lng = shrt;
         lng = sayiInt;
-//        lng = flt;
+//      lng = flt;
 //        lng = dbl;
 
         flt = byt;
@@ -75,6 +75,7 @@ public class C01_AutoWidening {
         dbl = sayiInt;
         dbl = lng;
         dbl = flt;
+
 
 
         int sayi1 = 20;
