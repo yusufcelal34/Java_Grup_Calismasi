@@ -14,10 +14,10 @@ public class C03_ExplicitNarrowing {
          */
 
 
-        int sayi1 = 17;
-        int sayi2 = 125;
-        int sayi3 = 134;
-        int sayi4 = 145;
+        int sayi1 = 17;     // 17
+        int sayi2 = 125;    // 125
+        int sayi3 = 134;    // -122 127-134
+        int sayi4 = 145;    //
         int sayi5 = 260;
         int sayi6 = 520;
         int sayi7 = 1245621;

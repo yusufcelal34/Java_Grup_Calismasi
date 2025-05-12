@@ -38,6 +38,8 @@ public class C03_Modules {
 
         System.out.println(  sayi / 10     ); // 24
 
+        System.out.println(  sayi % 10     ); //
+
         System.out.println(   sayi  ); // 245
 
         // sayiyi 24 olarak kaydetmek istersek
